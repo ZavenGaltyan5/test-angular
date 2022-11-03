@@ -5,17 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HeaderComponent } from './header/header.component';
+import { SignUpTeacherComponent } from './sign-up/sign-up-teacher/sign-up-teacher.component';
+import { SignUpDonorComponent } from './sign-up/sign-up-donor/sign-up-donor.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    HeaderComponent
+    HeaderComponent,
+    SignUpTeacherComponent,
+    SignUpDonorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

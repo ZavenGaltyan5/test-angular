@@ -1,0 +1,28 @@
+.Names-div{
+  margin-top: 150px;
+  display: flex;
+}
+.phone-number-div{
+}
+.select-region{
+  max-width: 190px;
+}
+.input-main{
+  width: 183px;
+  height: 48px;
+  border: 0.5px solid rgba(25, 72, 102, 0.8);
+  border-radius: 10px;
+}
+.input-main2{
+  width: 382px;
+  height: 48px;
+  border: 0.5px solid rgba(25, 72, 102, 0.8);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.input-main-2{
+  margin-left: 16px;
+}
+#opt1{
+  background-color: red;
+}

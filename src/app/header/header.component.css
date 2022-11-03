@@ -216,6 +216,11 @@
   list-style: none;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .wrapper ul{
+    left: 9%;
+  }
+}
 .wrapper ul li{
   height: 10%;
   margin: 15px 0;

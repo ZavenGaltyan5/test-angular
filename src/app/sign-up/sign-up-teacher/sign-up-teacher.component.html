@@ -1,20 +1,27 @@
 <form [formGroup]="profileForm">
 
+  <div class="sign-up-header"></div>
+
+<!--  Name-->
   <div class="Names-div">
     <input type="text" formControlName="firstName" placeholder="Name" class="input-main">
-    <div class="div-error"
+    <div class="div-error div-error1"
          *ngIf="profileForm.get('firstName')?.touched && profileForm.get('firstName')?.getError('required')">
       First Name is required.
     </div>
 
-    <input type="text" formControlName="lastName" placeholder="SurName" class="input-main input-main-2">
-    <div class="div-error"
+
+
+<!--   LastName -->
+    <input type="text" formControlName="lastName" placeholder="Last Name" class="input-main input-main-2">
+    <div class="div-error div-error1"
          *ngIf="profileForm.get('lastName')?.touched && profileForm.get('lastName')?.getError('required')">
       Last Name is required.
     </div>
   </div>
 
 
+<!--  Email-->
   <input type="text" formControlName="email" placeholder="Email" class="input-main2">
   <div class="div-error" *ngIf="profileForm.get('email')?.touched && profileForm.get('email')?.getError('required')">
     Email is required.
@@ -24,6 +31,7 @@
   </div>
 
 
+<!--  Phone-->
   <div class="phone-number-div">
   <input type="text" formControlName="phone" placeholder="Phone Number" class="input-main2">
   </div>
@@ -33,11 +41,9 @@
 
 
 
-
-
-
+<!--  Password-->
   <input id="password" type="password" formControlName="pass" placeholder="Password" class="input-main2">
-  <p (click)="ShowPass()" style="margin-left: 180px;margin-top: -40px;cursor: pointer">Show Password</p>
+  <img style="cursor: pointer" (click)="ShowPass()" class="show-pass-img" src="../../../assets/images/Eye.png" width="22" height="20">
   <div class="div-error" *ngIf="profileForm.get('pass')?.touched && profileForm.get('pass')?.getError('required')">
     Password is required.
   </div>
@@ -45,23 +51,32 @@
     Password is invalid.
   </div>
 
-  <input id="confirm-pass" type="password" formControlName="confPass" placeholder="Confirm Password" class="input-main2">
-  <p (click)="ShowPass2()" style="margin-left: 180px;margin-top: -40px;cursor: pointer">Show Password</p>
-  <div class="div-error" *ngIf="profileForm.get('confPass')?.touched && profileForm.get('confPass')?.getError('required')">
-    Password is required.
+
+
+<!--  ConfirmPassword-->
+  <div class="conf-pass-div">
+    <input id="confirm-pass" type="password" formControlName="confPass" placeholder="Confirm Password"
+           class="input-main2">
+    <img style="cursor: pointer" (click)="ShowPass2()" class="show-pass-img" src="../../../assets/images/Eye.png"
+         width="22" height="20">
+    <div class="div-error"
+         *ngIf="profileForm.get('confPass')?.touched && profileForm.get('confPass')?.getError('required')">
+      Password is required.
+    </div>
+    <div class="div-error"
+         *ngIf="profileForm.get('confPass')?.touched && profileForm.get('confPass')?.getError('pattern')">
+      Password is invalid.
+    </div>
   </div>
-  <div class="div-error" *ngIf="profileForm.get('confPass')?.touched && profileForm.get('confPass')?.getError('pattern')">
-    Password is invalid.
+
+
+
+<!--Sign-Up footer-->
+  <div class="sign-up-footer-div">
+    <a class="reg-donor" href="#">Register as a Donor</a>
+    <input class="ok-input" id="ok" type="button" value="Ok">
   </div>
 
 
   <input (click)="RegisterBtn()" class="reg-btn" id="reg-btn" type="button" value="Register">
 </form>
-
-
-<select>
-  <option id="opt1">dhdhgd</option>
-  <option>dhg</option>
-  <option>dhdhd</option>
-  <option>sgsfgfd</option>
-</select>

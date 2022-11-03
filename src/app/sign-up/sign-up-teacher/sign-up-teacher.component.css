@@ -23,6 +23,47 @@
 .input-main-2{
   margin-left: 16px;
 }
-#opt1{
-  background-color: red;
+.conf-pass-div{
+  display: block;
 }
+.show-pass-img{
+  margin-left: -35px;
+  margin-top: -4px;
+}
+.div-error{
+  color: red;
+}
+.div-error1{
+  display: block;
+  margin-top: 50px;
+  margin-left: -170px;
+}
+.ok-input{
+  width: 70px;
+  height: 48px;
+  background: #34C88A;
+  border-radius: 10px;
+  border: transparent;
+  color: #f8f8f8;
+}
+.reg-donor{
+  font-family: 'Arial',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #34C88A;
+  margin-top: 20px;
+}
+.sign-up-footer-div{
+  max-width: 383px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+
+
+
